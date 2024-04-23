@@ -1,0 +1,150 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('background.jpg') fixed;
+    background-size: cover;
+    overflow-y: auto;
+    /* Ensures scrollbar appears only when necessary */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #000066;
+    /* Solid background color */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: backdrop-filter 0.3s ease;
+    /* Smooth transition for blur */
+    backdrop-filter: blur(0);
+    /* Initially no blur */
+    z-index: 999;
+}
+
+header.blurred {
+    backdrop-filter: blur(2px);
+    /* Slight blur when scrolled */
+}
+
+header:hover {
+    backdrop-filter: blur(0);
+    /* No blur on hover */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-left: 20px;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #99c;
+}
+
+section {
+    padding: 40px 0;
+    margin-top: 100px;
+    /* Adjusted to accommodate the fixed header */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    /* Resetting top margin */
+}
+
+.project {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+#contact-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.text-field-4 {
+    border: none;
+    border-bottom: 1px dashed #999;
+    /* Dashed underline */
+    background-color: transparent;
+    /* Transparent background */
+    color: #999;
+    /* Color for hint text */
+    font-size: 16px;
+    padding: 5px;
+    width: 80%;
+    /* Adjust width as needed */
+    outline: none;
+    /* Remove default input focus outline */
+}
+
+.text-field-4:focus {
+    border-bottom: 1px solid #000;
+    /* Solid underline on focus */
+}
+
+.minh {
+    min-height: 100px;
+    /* Adjust minimum height for textarea */
+}

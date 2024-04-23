@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazim Alperen Akcakaya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            flex-shrink: 0;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        #home {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            /* Ensures all sections take up full viewport height */
+        }
+
+        section .container {
+            max-width: 800px;
+            /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Nazim Alperen Akcakaya</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Hello World! I'm Nazim Alperen Akcakaya</h2>
+                <p>As a software developer, I am passionate about creating innovative solutions that make a difference.
+                </p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Write a brief introduction about yourself, your skills, and your experiences as a computer
+                    programmer.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p>Description of the project goes here.</p>
+                    <p><a href="#">View Project</a></p>
+                </div>
+                <!-- You can repeat this structure for each project -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="input-container">
+                        <input type="text" class="text-field-4 w-input" maxlength="256" name="name" data-name="name"
+                            placeholder="Enter your name" id="name-4">
+                    </div>
+                    <div class="input-container">
+                        <input type="email" class="text-field-4 w-input" maxlength="256" name="email" data-name="email"
+                            placeholder="Enter your email address" id="email-4" required="">
+                    </div>
+                    <div class="input-container">
+                        <textarea id="message" name="message" placeholder="Your message" maxlength="5000"
+                            data-name="message" class="text-field-4 minh w-input" spellcheck="false"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nazim Alperen Akcakaya. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
